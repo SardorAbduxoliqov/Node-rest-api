@@ -32,7 +32,7 @@ const fileStorage = multer.diskStorage({
     cb(null, "public/images");
   },
   filename: (req, file, cb) => {
-    cb(null,  req.body.name)
+    cb(null,  req.body.name) //this write file as its name
     // cb(null, new Date().toISOString().replace(/:/g, '-') + file.originalname);
   },
 });   
